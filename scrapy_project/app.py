@@ -131,16 +131,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Load data
-import os
-
-st.write("Current folder :", os.getcwd())
-
-st.write("Isi folder :")
-st.write(os.listdir())
-
 DATA_PATH = "books.csv"
-
-st.write("Apakah books.csv ada?", os.path.exists(DATA_PATH))
 
 if os.path.exists(DATA_PATH):
     df = pd.read_csv(DATA_PATH)
